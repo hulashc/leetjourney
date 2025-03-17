@@ -26,8 +26,13 @@ class Solution:
                 return True
         return False
 
-#Hash Set
+#Hash Set (OPTIMAL SOLUTION) 
 
 class Solution:
-    def hasDuplicate(self, nums: List[int]) -> bool:
-        seen = set
+    def hasDuplicate(self, nums: List[int]) -> bool: # type: ignore
+        seen = set()
+        for num in nums:
+            if num is seen:
+                return True
+            seen.add(num)
+        return False
