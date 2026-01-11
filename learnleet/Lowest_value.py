@@ -1,8 +1,9 @@
-my_array = [7,12,9,4,11]
-minVal = my_array[0]
+numbers = [10, 4, 7, 2, 9]
 
-for i in my_array:
-    if i < minVal:
-        minVal = i
+lowest = numbers[0]
 
-print('Lowest Value:',minVal)
+for num in numbers:
+    if num < lowest:
+        lowest = num
+
+print("Lowest value in the list is:", lowest)
