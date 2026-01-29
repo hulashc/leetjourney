@@ -19,6 +19,17 @@ def twoSum(nums, target):
         index_map[num]=i
     return[]
 
+'''
+create empty map seen
+
+for each index i and value num:
+    complement = target - x
+    if complement exists in seen:
+        return index of complement and i
+    store num with index i in seen
+
+'''
+
 # Approach 2: Brute Force – O(n²) time, O(1) space
 
 def two_sum(nums, target):
