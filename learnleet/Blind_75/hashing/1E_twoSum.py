@@ -19,6 +19,23 @@ def twoSum(nums, target):
         index_map[num]=i
     return[]
 
+def two_sum(nums, target):
+    index_map = []
+
+    for i , num in enumerate():
+        complement = target - num
+        if complement in index_map:
+            return [index_map, i]
+        index_map[num]=i
+    return[]
+
+
+
+
+
+
+
+
 '''
 create empty map seen
 
