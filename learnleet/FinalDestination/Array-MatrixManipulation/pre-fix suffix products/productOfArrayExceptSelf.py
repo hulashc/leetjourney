@@ -22,3 +22,6 @@ def product_except_self(nums):
         suffix *= nums[i]
 
     return answer
+
+
+
